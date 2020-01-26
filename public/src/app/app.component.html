@@ -1,0 +1,30 @@
+<div class="row">
+  <h1>Gold Count: {{goldCount}}</h1>
+</div>
+<div class="row">
+  <div class="col">
+    <h2>Farm</h2>
+    <p>Earns 2- 5 Gold</p>
+    <button (click)='gold("Farm")'>Farm!</button>
+  </div>
+  <div class="col">
+    <h2>Cave</h2>
+    <p>Earns 5-10 Gold</p>
+    <button (click)='gold("Cave")'>Cave!</button>
+  </div>
+  <div class="col">
+    <h2>Casino</h2>
+    <p>Earns up to or lose 100 Gold</p>
+    <button (click)='gold("Casino")'>Casino!</button>
+  </div>
+  <div class="col">
+    <h2>House</h2>
+    <p>Earns 7-15 Gold</p>
+    <button (click)='gold("House")'>House!</button>
+  </div>
+</div>
+<div>
+  <ul *ngFor="let activity of activities">
+    <li>{{activity}}</li>
+  </ul>
+</div>
